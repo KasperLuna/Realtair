@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Increment Step Component Buttons, set on CRA
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
-export default function Increment(props){
+const Increment = ({ steps }) => {
     let [num, setNum] = useState(0);
-    function incrementByStep() {
-       setNum(num + props.steps || num + 1)
+    const incrementByStep = () => {
+       setNum(num + steps || num + 1)
     }
     return(
         <>
@@ -11,3 +11,5 @@ export default function Increment(props){
         </>
     );
 }
+
+export default Increment;

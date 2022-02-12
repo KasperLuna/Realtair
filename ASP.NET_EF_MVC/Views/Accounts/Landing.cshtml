@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Landing Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome @Session["Username"].ToString()!</h1>
+    <p class="lead">You are now logged in.
+    <p>
+        <a href="/Accounts/Logout" class="btn btn-primary btn-lg">Log Out &raquo;</a>
+    </p>
+</div>

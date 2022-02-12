@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>.NET EF MVC Test</h1>
+
+    @if (Session["Username"] != null)
+    {
+        <p class="lead">Return to your Account.</p>
+        <p>
+            <a href="/Accounts/Landing" class="btn btn-primary btn-lg">Return to Landing &raquo;</a>
+        </p>
+    }
+    else
+    {
+
+        <p class="lead">Click Register to Create an Account, or Login to Log into an existing one.</p>
+        <p>
+            <a href="/Accounts/Register" class="btn btn-primary btn-lg">Register</a>
+            <a href="/Accounts/Login" class="btn btn-primary btn-lg">Login &raquo;</a>
+        </p>
+    }
+
+</div>
